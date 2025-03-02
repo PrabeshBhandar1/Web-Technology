@@ -3,41 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Average</title>
+    <title>Document</title>
     <style>
+        table{
+            border-collapse: collapse;
+            text-align: center;
+            border-spacing: 20px;
+        }
         th,td{
             border: 1px solid black;
         }
+        .first-col { background-color: lightblue; }
+        .second-col { background-color: lightgreen; }
+        .third-col { background-color: lightcoral; }
     </style>
 </head>
 <body>
+    <table cellspacing="40">
 
-    <table style="border-collapse: collapse;">
-        <tr>
-            <th rowspan="2"></th>
-            <th colspan="2">Average</th>
-            <th rowspan="2">Red <br> Eyes</th>
-            
-        </tr>
-        <tr>
-            <th></th>
-            <th>Height</th>
-            <th>Weight</th>
-        </tr>
-        <tr>
-            <td>Males</td>
-            <td>1.5</td>
-            <td>0.004</td>
-            <td>45%</td>
+        <colgroup>
+            <col  colspan="4" class="first-col">
+            <col aria-colspan="4" class="second-col" >
+            <col aria-colspan="4" class="third-col">
+        </colgroup>
 
+        <tr>
+            <th colspan="4" >Magic Table</th>
         </tr>
         <tr>
-            <td>Females</td>
-            <td>1.4</td>
-            <td>0.0006</td>
-            <td>47%</td>
+            <td colspan="2">8</td>
+            <td>7</td>
+            <td rowspan="2">80</td>
         </tr>
+        <tr>
+            <td rowspan="2">20</td>
+            <td colspan="2">40</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td colspan="2">50</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td colspan="2">90</td>
+            <td>30</td>
+        </tr>
+
     </table>
-    
 </body>
 </html>

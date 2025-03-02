@@ -1,43 +1,90 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Average</title>
     <style>
-        table{
-            border-collapse: collapse;
-            text-align: center;
-        }
         th,td{
             border: 1px solid black;
         }
     </style>
 </head>
 <body>
-    <table >
-        <tr>
-            <th colspan="4" >Magic Table</th>
-        </tr>
-        <tr>
-            <td colspan="2">8</td>
-            <td>7</td>
-            <td rowspan="2">80</td>
-        </tr>
-        <tr>
-            <td rowspan="2">20</td>
-            <td colspan="2">40</td>
-        </tr>
-        <tr>
-            <td>25</td>
-            <td colspan="2">50</td>
-        </tr>
-        <tr>
-            <td>60</td>
-            <td colspan="2">90</td>
-            <td>30</td>
-        </tr>
 
+    <table style="border-collapse: collapse;" >
+        
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2" >Red Eyes</th>
+            
+        </tr>
+        <tr>
+            
+            <th>Height</th>
+            <th>Weight</th>
+        </tr>
+        <tr>
+            <td>Males</td>
+            <td>1.5</td>
+            <td>0.004</td>
+            <td>45%</td>
+
+        </tr>
+        <tr>
+            <td>Females</td>
+            <td>1.4</td>
+            <td>0.0006</td>
+            <td>47%</td>
+        </tr>
     </table>
+
+    <dl>  
+        <dt>Aries</dt>  
+        <dd>-One of the 12 horoscope sign.</dd>  
+        <dt>Bingo</dt>  
+        <dd>-One of my evening snacks</dd>  
+       <dt>Leo</dt>  
+       <dd>-It is also an one of the 12 horoscope sign.</dd>  
+        <dt>Oracle</dt>  
+        <dd>-It is a multinational tech corporation.</dd>   
+      </dl>  
+
+<!--       
+      <h2>Example of Object tag</h2>  
+ <object height="250" width="500" data="https://www.youtube.com/embed/O5ShUO6ws"></object>  
+
+      <img src="" alt="Does it working?"/> -->
+
+      <h2>Click on the different parts of the image</h2>
+
+      <!-- Image with an image map -->
+      <img src="https://imgs.search.brave.com/61y8e5hzyCWqBtrZxF94Hv2my9kQvAN1e0QF5pHig2I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWFwc29md29ybGQu/Y29tL21hcHMvd29y/bGQtcG9saXRpY2Fs/LW1hcHMuanBn"
+       usemap="#worldmap" width="500" height="300" alt="World Map">
+  
+      <!-- Defining the map -->
+      <map name="worldmap">
+          <!-- Clickable area for USA -->
+          <area shape="rect" coords="50,50,150,150" href="table1.html" alt="USA">
+          
+          <!-- Clickable area for India -->
+          <area shape="circle" coords="300,150,50" href="https://en.wikipedia.org/wiki/India" alt="India">
+  
+          <!-- Clickable area for Australia -->
+          <area shape="poly" coords="400,200,420,250,450,230,430,180" href="https://en.wikipedia.org/wiki/Australia" alt="Australia">
+      </map>
+
+      <br>
+      <br>
+      
+      <a href="frame.html">frame is here</a>
+      <a href="table1.html">table</a>
+      <a href="frame1.html">frame1</a>
+      <a href="frame2.html">frame2</a>
+
 </body>
 </html>
