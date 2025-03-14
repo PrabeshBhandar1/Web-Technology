@@ -70,3 +70,18 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+input[type="button"]{
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+input[type="button"]:hover{
+    background: #0056b3;
+}
