@@ -9,7 +9,7 @@
 <body>
     <div class="form-container">
         <h2>Contact Us</h2>
-        <form id="contact-form">
+        <form id="contact-form" name="myform" action="form_process.php" method="get" onsubmit="return validateForm(this);">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -21,7 +21,7 @@
 
             <div class="rating">
                 <label for="rating">Rating</label>
-                <select name="rating" id="">
+                <select name="rating" id="" autofocus>
                     <option value="">1</option>
                     <option value="">2</option>
                     <option value="">3</option>
@@ -30,16 +30,40 @@
                     
                 </select>
             </div>
-
+            <br>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" id="gender" value="male"> Male
+                <input type="radio" name="gender" id="gender" value="male"> Female
+                <input type="radio" name="gender" id="gender" value="male"> Rohit (Others)
+            </div>
 
             <div class="form-group">
+
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <button type="submit">Send Message</button>
+
+            <input type="checkbox" name="robot" id="robot" required> I'm not a robot.
             <br><br>
-            <input type="button" value="Reset">
+            <button type="submit" >Send Message</button>
+            <br><br>
+            <!-- <input type="button" value="Reset" > -->
         </form>
+       
     </div>
+    <script>
+        function validateForm(myform){
+            if(myform.name.value==""){
+                alert("you cannot leave the name field empty.");
+                return (false);
+            }
+            else{
+                return(true)
+            }
+        }
+       
+    </script>
 </body>
+
 </html>
